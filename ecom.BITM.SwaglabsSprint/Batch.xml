@@ -1,0 +1,18 @@
+
+<suite name="Suite">
+
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="HamburgerPageScript.HamburgerTest"/>
+      <class name="CartPageScript.CartpageTest"/>
+      <class name="CheckoutPageScript.Checkoutpage"/>
+      <class name="HamburgerPageScript.HamburgerNegativeTest"/>
+      <class name="LoginPageScript.LoginPageNegative"/>
+      <class name="CartPageScript.CartpageNegativeTest"/>
+      <class name="ProductsPageScript.ProductTest"/>
+      <class name="LoginPageScript.LoginPageTest"/>
+      <class name="ProductsPageScript.ProductNegativeTest"/>
+      <class name="CheckoutPageScript.CheckoutNegative"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

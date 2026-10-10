@@ -1,0 +1,17 @@
+
+<suite name="Suite">
+<groups>
+<run>
+<include name="FT"></include>
+</run>
+</groups>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="HamburgerPageScript.HamburgerTest"/>
+      <class name="CartPageScript.CartpageTest"/>
+      <class name="CheckoutPageScript.Checkoutpage"/>
+      <class name="ProductsPageScript.ProductTest"/>
+      <class name="LoginPageScript.LoginPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

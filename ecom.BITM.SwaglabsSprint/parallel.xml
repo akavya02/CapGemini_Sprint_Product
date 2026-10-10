@@ -1,0 +1,27 @@
+
+
+<suite name="SwagLabs Parallel Suite"
+       parallel="classes"
+       thread-count="3">
+
+    <test name="SwagLabs Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="LoginPageScript.LoginPageTest"/>
+            <class name="LoginPageScript.LoginPageNegative"/>
+
+            <class name="ProductsPageScript.ProductTest"/>
+            <class name="ProductsPageScript.ProductNegativeTest"/>
+
+            <class name="CartPageScript.CartpageTest"/>
+            <class name="CartPageScript.CartpageNegativeTest"/>
+
+            <class name="CheckoutPageScript.Checkoutpage"/>
+            <class name="CheckoutPageScript.CheckoutNegative"/>
+
+            <class name="HamburgerPageScript.HamburgerTest"/>
+            <class name="HamburgerPageScript.HamburgerNegativeTest"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="CartPageScript.CartpageTest">
+        <methods>
+          <include name="bM"/>
+          <include name="verifyCartCheckoutIntegration" invocation-numbers="1"/>
+          <include name="aM"/>
+          <include name="verifyAddProductToCart" invocation-numbers="1"/>
+          <include name="aT"/>
+          <include name="bS"/>
+          <include name="bC"/>
+          <include name="aC"/>
+          <include name="bT"/>
+          <include name="aS"/>
+        </methods>
+      </class> <!-- CartPageScript.CartpageTest -->
+      <class name="ProductsPageScript.ProductTest">
+        <methods>
+          <include name="bM"/>
+          <include name="aM"/>
+          <include name="aT"/>
+          <include name="bS"/>
+          <include name="bC"/>
+          <include name="bT"/>
+          <include name="aS"/>
+          <include name="aC"/>
+          <include name="productToCart" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- ProductsPageScript.ProductTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

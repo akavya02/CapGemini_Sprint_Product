@@ -1,0 +1,17 @@
+
+<suite name="Suite">
+<groups>
+<run>
+<include name="Neg"></include>
+</run>
+</groups>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="HamburgerPageScript.HamburgerNegativeTest"/>
+      <class name="LoginPageScript.LoginPageNegative"/>
+      <class name="CartPageScript.CartpageNegativeTest"/>
+      <class name="ProductsPageScript.ProductNegativeTest"/>
+      <class name="CheckoutPageScript.CheckoutNegative"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
