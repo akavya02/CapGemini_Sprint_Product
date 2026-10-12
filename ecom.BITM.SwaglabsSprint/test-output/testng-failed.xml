@@ -1,35 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite thread-count="3" parallel="classes" name="Failed suite [SwagLabs Parallel Suite]">
+  <test thread-count="3" parallel="classes" name="SwagLabs Tests(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="CartPageScript.CartpageTest">
+      <class name="ProductsPageScript.ProductNegativeTest">
         <methods>
           <include name="bM"/>
-          <include name="verifyCartCheckoutIntegration" invocation-numbers="1"/>
           <include name="aM"/>
-          <include name="verifyAddProductToCart" invocation-numbers="1"/>
+          <include name="verifyProductNotAddedWithoutClickingAddToCart" invocation-numbers="0 1"/>
           <include name="aT"/>
           <include name="bS"/>
           <include name="bC"/>
+          <include name="bT"/>
+          <include name="aS"/>
+          <include name="aC"/>
+        </methods>
+      </class> <!-- ProductsPageScript.ProductNegativeTest -->
+      <class name="CartPageScript.CartpageTest">
+        <methods>
+          <include name="bM"/>
+          <include name="aM"/>
+          <include name="verifyAddProductToCart" invocation-numbers="0 1"/>
+          <include name="aT"/>
+          <include name="bC"/>
+          <include name="bS"/>
           <include name="aC"/>
           <include name="bT"/>
           <include name="aS"/>
         </methods>
       </class> <!-- CartPageScript.CartpageTest -->
-      <class name="ProductsPageScript.ProductTest">
+      <class name="CheckoutPageScript.Checkoutpage">
         <methods>
           <include name="bM"/>
+          <include name="verifyCheckoutPageDisplayed"/>
+          <include name="verifyCheckoutDetailsSmoke"/>
           <include name="aM"/>
+          <include name="verifyCheckoutWithValidDetails"/>
+          <include name="bC"/>
+          <include name="aC"/>
+          <include name="verifyCompleteCheckoutWorkflow"/>
+          <include name="verifyLoginToCheckoutIntegration"/>
+          <include name="verifyOrderCompletion"/>
+          <include name="verifyCheckoutSmoke"/>
           <include name="aT"/>
           <include name="bS"/>
-          <include name="bC"/>
+          <include name="verifyCartToCheckoutDetails" invocation-numbers="0"/>
           <include name="bT"/>
           <include name="aS"/>
-          <include name="aC"/>
-          <include name="productToCart" invocation-numbers="2"/>
         </methods>
-      </class> <!-- ProductsPageScript.ProductTest -->
+      </class> <!-- CheckoutPageScript.Checkoutpage -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- SwagLabs Tests(failed) -->
+</suite> <!-- Failed suite [SwagLabs Parallel Suite] -->
