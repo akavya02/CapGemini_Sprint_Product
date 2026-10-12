@@ -1,37 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [SwagLabs Cross Browser Suite]">
-  <test thread-count="5" name="Edge Tests(failed)">
-    <parameter name="browser" value="edge"/>
+  <test thread-count="5" name="Firefox Tests(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="HamburgerPageScript.HamburgerTest">
+      <class name="LoginPageScript.LoginPageTest">
         <methods>
           <include name="bM"/>
-          <include name="verifyReset"/>
+          <include name="verifyLoginWithValidCredentials"/>
           <include name="aM"/>
-          <include name="verifyHamBurgerMenu"/>
-          <include name="aT"/>
+          <include name="verifyLoginAndNavigationToCart"/>
+          <include name="verifyLoginAndProductsPage"/>
           <include name="bC"/>
+          <include name="verifyLoginAndNavigationToProducts"/>
+          <include name="aC"/>
+          <include name="verifyCompleteLoginToCheckoutWorkflow"/>
+          <include name="verifyCompleteLoginToCartWorkflow"/>
+          <include name="verifyLoginSmoke"/>
+          <include name="aT"/>
           <include name="bS"/>
+          <include name="verifyLoginButtonFunctionality"/>
           <include name="bT"/>
           <include name="aS"/>
-          <include name="aC"/>
-          <include name="verifyCompleteHamburgerWorkflow"/>
         </methods>
-      </class> <!-- HamburgerPageScript.HamburgerTest -->
-      <class name="CheckoutPageScript.Checkoutpage">
-        <methods>
-          <include name="bM"/>
-          <include name="aM"/>
-          <include name="aT"/>
-          <include name="bC"/>
-          <include name="bS"/>
-          <include name="aC"/>
-          <include name="bT"/>
-          <include name="aS"/>
-          <include name="verifyCompleteCheckoutWorkflow" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- CheckoutPageScript.Checkoutpage -->
+      </class> <!-- LoginPageScript.LoginPageTest -->
     </classes>
-  </test> <!-- Edge Tests(failed) -->
+  </test> <!-- Firefox Tests(failed) -->
 </suite> <!-- Failed suite [SwagLabs Cross Browser Suite] -->
