@@ -36,6 +36,7 @@ public class Baseclass {
 	public void bC(@Optional("chrome")String browser)throws Exception {
 		Reporter.log("Before Class",true);
 		driver = wu.launchBrowser(browser);
+		Reporter.log(browser,true);
 		driver.manage().window().maximize();
 	}
 
