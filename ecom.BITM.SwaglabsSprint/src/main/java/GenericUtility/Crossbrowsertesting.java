@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class Crossbrowsertesting {
 	WebDriver driver=null;
@@ -25,8 +26,13 @@ public class Crossbrowsertesting {
 
 		else if(browser.equalsIgnoreCase("edge"))
 			 driver = new EdgeDriver();
-		else if(browser.equalsIgnoreCase("firefox"))
-			 driver = new FirefoxDriver();
+		else if(browser.equalsIgnoreCase("firefox")) {
+			   FirefoxOptions options = new FirefoxOptions();
+			    options.addArguments("-headless");
+
+			    driver = new FirefoxDriver(options);
+		}
+			 //driver = new FirefoxDriver();
 		else
 			 driver = new ChromeDriver();
 
